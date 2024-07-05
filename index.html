@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GradeBook DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>GradeBook DApp</h1>
+    <button id="connectButton">Connect to MetaMask</button>
+    <br><br>
+    <div>
+        <h2>Add Grade</h2>
+        <input type="text" id="studentName" placeholder="Student Name" />
+        <input type="text" id="subject" placeholder="Subject" />
+        <input type="number" id="grade" placeholder="Grade" />
+        <button id="addGradeButton">Add Grade</button>
+    </div>
+    <br>
+    <div>
+        <h2>Update Grade</h2>
+        <input type="text" id="updateStudentName" placeholder="Student Name" />
+        <input type="text" id="updateSubject" placeholder="Subject" />
+        <input type="number" id="updateGrade" placeholder="New Grade" />
+        <button id="updateGradeButton">Update Grade</button>
+    </div>
+    <br>
+    <div>
+        <h2>Get Grade</h2>
+        <input type="text" id="getGradeStudentName" placeholder="Student Name" />
+        <input type="text" id="getGradeSubject" placeholder="Subject" />
+        <button id="getGradeButton">Get Grade</button>
+        <p id="gradeOutput"></p>
+    </div>
+    <br>
+    <div>
+        <h2>Average Grade</h2>
+        <input type="text" id="avgSubject" placeholder="Subject" />
+        <button id="avgGradeButton">Get Average Grade</button>
+        <p id="avgGradeOutput"></p>
+    </div>
+</body>
+</html>
